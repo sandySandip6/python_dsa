@@ -22,6 +22,11 @@ class SinglList:
         while (temp != None):
             print(temp.data, end = " ")
             temp = temp.next
+    
+    def insert_at_beginning(self, data):
+        temp = Node(data)
+        temp.next = self.head
+        self.head = temp
 
 s = SinglList()
 s.insert_at_end(10)

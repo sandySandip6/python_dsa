@@ -44,6 +44,26 @@ for i in arr:
         largest = i
 print(largest)  
 
+# Task 8: Find Average
+sum = 0
+for i in arr:
+    sum += i
+average = sum / len(arr)
+print(average)  
 
+# Task 9: Find Median
+sorted_arr = sorted(arr)
+n = len(sorted_arr)
+if n % 2 == 0:
+    median = (sorted_arr[n // 2 - 1] + sorted_arr[n // 2]) / 2
+else:
+    median = sorted_arr[n // 2]
+print(median)
+
+# Task 10: Find Mode
+from collections import Counter
+counter = Counter(arr)
+mode = counter.most_common(1)[0][0]
+print(mode)
 
 

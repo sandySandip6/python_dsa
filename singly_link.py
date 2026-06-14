@@ -27,7 +27,18 @@ class SinglList:
         temp = Node(data)
         temp.next = self.head
         self.head = temp
-
+    
+    def insert_after(self, data, x):
+        temp = Node(data)
+        temp1 = self.head
+        while (temp1 != None):
+            if (temp1.data == x):
+                temp.next = temp1.next
+                temp1.next = temp
+                return
+            temp1 = temp1.next
+        print(x, "not found in the list")
+    
 s = SinglList()
 s.insert_at_end(10)
 s.insert_at_end(20)

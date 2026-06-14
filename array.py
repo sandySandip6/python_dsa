@@ -1,3 +1,6 @@
+from tokenize import Number
+
+
 arr = [1, 2, 3, 4, 5]
 
 sort = arr.sort()
@@ -27,6 +30,19 @@ print(sort)
 # search = arr.index(4)
 # print(search)
 
+# Task 6: Find Smallest Number
+smallest = arr[0]
+for i in arr:
+    if i < smallest:
+        smallest = i
+print(smallest)
+
+# Task 7: Find Largest Number
+largest = arr[0]
+for i in arr:
+    if i > largest:
+        largest = i
+print(largest)  
 
 
 

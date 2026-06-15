@@ -61,9 +61,21 @@ else:
 print(median)
 
 # Task 10: Find Mode
-from collections import Counter
-counter = Counter(arr)
+from collections import Counter 
+counter = Counter(arr) 
 mode = counter.most_common(1)[0][0]
-print(mode)
+print(mode) 
+
+# Task 11: Recursion to find factorial
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1) 
+print(factorial(5))
+
+
+
+
 
 
